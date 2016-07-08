@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="graphcuts">
+      <UniqueIdentifier>{454fcb84-3a39-4a55-ac5a-54e928421cb1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="blending">
+      <UniqueIdentifier>{d21d6e09-7ef4-402f-abf7-9b3d1cec6e82}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="graphcuts\block.h">
+      <Filter>graphcuts</Filter>
+    </ClInclude>
+    <ClInclude Include="graphcuts\colorCloneCut.h">
+      <Filter>graphcuts</Filter>
+    </ClInclude>
+    <ClInclude Include="graphcuts\contrastCut.h">
+      <Filter>graphcuts</Filter>
+    </ClInclude>
+    <ClInclude Include="graphcuts\coord.h">
+      <Filter>graphcuts</Filter>
+    </ClInclude>
+    <ClInclude Include="graphcuts\dialCut.h">
+      <Filter>graphcuts</Filter>
+    </ClInclude>
+    <ClInclude Include="graphcuts\distanceMap.h">
+      <Filter>graphcuts</Filter>
+    </ClInclude>
+    <ClInclude Include="graphcuts\graph.h">
+      <Filter>graphcuts</Filter>
+    </ClInclude>
+    <ClInclude Include="graphcuts\histogram.h">
+      <Filter>graphcuts</Filter>
+    </ClInclude>
+    <ClInclude Include="graphcuts\histogramCut.h">
+      <Filter>graphcuts</Filter>
+    </ClInclude>
+    <ClInclude Include="graphcuts\image.h">
+      <Filter>graphcuts</Filter>
+    </ClInclude>
+    <ClInclude Include="graphcuts\imageCut.h">
+      <Filter>graphcuts</Filter>
+    </ClInclude>
+    <ClInclude Include="graphcuts\imageData.h">
+      <Filter>graphcuts</Filter>
+    </ClInclude>
+    <ClInclude Include="graphcuts\luminanceCut.h">
+      <Filter>graphcuts</Filter>
+    </ClInclude>
+    <ClInclude Include="graphcuts\maxDiffCut.h">
+      <Filter>graphcuts</Filter>
+    </ClInclude>
+    <ClInclude Include="graphcuts\panoCut.h">
+      <Filter>graphcuts</Filter>
+    </ClInclude>
+    <ClInclude Include="graphcuts\portraitcut.h">
+      <Filter>graphcuts</Filter>
+    </ClInclude>
+    <ClInclude Include="graphcuts\timelapseCut.h">
+      <Filter>graphcuts</Filter>
+    </ClInclude>
+    <ClInclude Include="blending\blend.h">
+      <Filter>blending</Filter>
+    </ClInclude>
+    <ClInclude Include="blending\blendFuncs.h">
+      <Filter>blending</Filter>
+    </ClInclude>
+    <ClInclude Include="blending\oldBlend.h">
+      <Filter>blending</Filter>
+    </ClInclude>
+    <ClInclude Include="baseGLViewer.h" />
+    <ClInclude Include="bestFitAffine.h" />
+    <ClInclude Include="brush.h" />
+    <ClInclude Include="compViewer.h" />
+    <ClInclude Include="constantEditor.h" />
+    <ClInclude Include="coord.h" />
+    <ClInclude Include="fuse.h" />
+    <ClInclude Include="glerror.h" />
+    <ClInclude Include="glext.h" />
+    <ClInclude Include="globFunc.h" />
+    <ClInclude Include="hb.h" />
+    <ClInclude Include="ImageAbs.h" />
+    <ClInclude Include="jl_vectors.h" />
+    <ClInclude Include="linearSolver.h" />
+    <ClInclude Include="myBusyInfo.h" />
+    <ClInclude Include="myGLCanvas.h" />
+    <ClInclude Include="paintCheck.h" />
+    <ClInclude Include="sortedStackViewer.h" />
+    <ClInclude Include="stackViewer.h" />
+    <ClInclude Include="steppableLinearSolver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="graphcuts\colorCloneCut.cpp">
+      <Filter>graphcuts</Filter>
+    </ClCompile>
+    <ClCompile Include="graphcuts\contrastCut.cpp">
+      <Filter>graphcuts</Filter>
+    </ClCompile>
+    <ClCompile Include="graphcuts\dialCut.cpp">
+      <Filter>graphcuts</Filter>
+    </ClCompile>
+    <ClCompile Include="graphcuts\distanceMap.cpp">
+      <Filter>graphcuts</Filter>
+    </ClCompile>
+    <ClCompile Include="graphcuts\graph.cpp">
+      <Filter>graphcuts</Filter>
+    </ClCompile>
+    <ClCompile Include="graphcuts\histogram.cpp">
+      <Filter>graphcuts</Filter>
+    </ClCompile>
+    <ClCompile Include="graphcuts\histogramCut.cpp">
+      <Filter>graphcuts</Filter>
+    </ClCompile>
+    <ClCompile Include="graphcuts\image.cpp">
+      <Filter>graphcuts</Filter>
+    </ClCompile>
+    <ClCompile Include="graphcuts\imageCut.cpp">
+      <Filter>graphcuts</Filter>
+    </ClCompile>
+    <ClCompile Include="graphcuts\imageData.cpp">
+      <Filter>graphcuts</Filter>
+    </ClCompile>
+    <ClCompile Include="graphcuts\luminanceCut.cpp">
+      <Filter>graphcuts</Filter>
+    </ClCompile>
+    <ClCompile Include="graphcuts\maxDiffCut.cpp">
+      <Filter>graphcuts</Filter>
+    </ClCompile>
+    <ClCompile Include="graphcuts\maxflow.cpp">
+      <Filter>graphcuts</Filter>
+    </ClCompile>
+    <ClCompile Include="graphcuts\panoCut.cpp">
+      <Filter>graphcuts</Filter>
+    </ClCompile>
+    <ClCompile Include="graphcuts\portraitcut.cpp">
+      <Filter>graphcuts</Filter>
+    </ClCompile>
+    <ClCompile Include="graphcuts\timelapseCut.cpp">
+      <Filter>graphcuts</Filter>
+    </ClCompile>
+    <ClCompile Include="blending\blend.cpp">
+      <Filter>blending</Filter>
+    </ClCompile>
+    <ClCompile Include="blending\blendFuncs.cpp">
+      <Filter>blending</Filter>
+    </ClCompile>
+    <ClCompile Include="blending\oldBlend.cpp">
+      <Filter>blending</Filter>
+    </ClCompile>
+    <ClCompile Include="baseGLViewer.cpp" />
+    <ClCompile Include="bestFitAffine.cpp" />
+    <ClCompile Include="brush.cpp" />
+    <ClCompile Include="compViewer.cpp" />
+    <ClCompile Include="constantEditor.cpp" />
+    <ClCompile Include="fuse.cpp" />
+    <ClCompile Include="hb.cpp" />
+    <ClCompile Include="ImageAbs.cpp" />
+    <ClCompile Include="linearSolver.cpp" />
+    <ClCompile Include="myBusyInfo.cpp" />
+    <ClCompile Include="myGLCanvas.cpp" />
+    <ClCompile Include="sortedStackViewer.cpp" />
+    <ClCompile Include="stackViewer.cpp" />
+    <ClCompile Include="steppableLinearSolver.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="fuse.rc" />
+  </ItemGroup>
+</Project>
