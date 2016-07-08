@@ -1,0 +1,388 @@
+﻿  colorCloneCut.cpp
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2286): error C3861: “strspn”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2293): error C3861: “strncpy_s”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2304): error C3861: “strncpy”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2314): error C3861: “strncat_s”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2325): error C3861: “strncat”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2336): error C3861: “strtok”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2344): error C3861: “strtok_s”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2351): error C3861: “_strnset_s”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2361): error C3861: “_strnset”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2370): error C3861: “_strset_s”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2380): error C3861: “_strset”: 找不到标识符
+E:\wxWindows-2.4.2\wxWindows-2.4.2\include\wx/wxchar.h(573): error C3861: “strlen”: 找不到标识符
+E:\wxWindows-2.4.2\wxWindows-2.4.2\include\wx/buffer.h(98): error C3861: “strdup”: 找不到标识符
+E:\wxWindows-2.4.2\wxWindows-2.4.2\include\wx/buffer.h(98): fatal error C1903: 无法从以前的错误中恢复；正在停止编译
+  contrastCut.cpp
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2286): error C3861: “strspn”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2293): error C3861: “strncpy_s”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2304): error C3861: “strncpy”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2314): error C3861: “strncat_s”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2325): error C3861: “strncat”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2336): error C3861: “strtok”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2344): error C3861: “strtok_s”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2351): error C3861: “_strnset_s”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2361): error C3861: “_strnset”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2370): error C3861: “_strset_s”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2380): error C3861: “_strset”: 找不到标识符
+E:\wxWindows-2.4.2\wxWindows-2.4.2\include\wx/wxchar.h(573): error C3861: “strlen”: 找不到标识符
+E:\wxWindows-2.4.2\wxWindows-2.4.2\include\wx/buffer.h(98): error C3861: “strdup”: 找不到标识符
+E:\wxWindows-2.4.2\wxWindows-2.4.2\include\wx/buffer.h(98): fatal error C1903: 无法从以前的错误中恢复；正在停止编译
+  dialCut.cpp
+E:\wxWindows-2.4.2\wxWindows-2.4.2\include\wx/buffer.h(98): error C3861: “strdup”: 找不到标识符
+E:\wxWindows-2.4.2\wxWindows-2.4.2\include\wx/buffer.h(98): fatal error C1903: 无法从以前的错误中恢复；正在停止编译
+  distanceMap.cpp
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2286): error C3861: “strspn”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2293): error C3861: “strncpy_s”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2304): error C3861: “strncpy”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2314): error C3861: “strncat_s”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2325): error C3861: “strncat”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2336): error C3861: “strtok”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2344): error C3861: “strtok_s”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2351): error C3861: “_strnset_s”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2361): error C3861: “_strnset”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2370): error C3861: “_strset_s”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2380): error C3861: “_strset”: 找不到标识符
+E:\wxWindows-2.4.2\wxWindows-2.4.2\include\wx/wxchar.h(573): error C3861: “strlen”: 找不到标识符
+E:\wxWindows-2.4.2\wxWindows-2.4.2\include\wx/buffer.h(98): error C3861: “strdup”: 找不到标识符
+E:\wxWindows-2.4.2\wxWindows-2.4.2\include\wx/buffer.h(98): fatal error C1903: 无法从以前的错误中恢复；正在停止编译
+  graph.cpp
+  histogram.cpp
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2286): error C3861: “strspn”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2293): error C3861: “strncpy_s”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2304): error C3861: “strncpy”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2314): error C3861: “strncat_s”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2325): error C3861: “strncat”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2336): error C3861: “strtok”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2344): error C3861: “strtok_s”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2351): error C3861: “_strnset_s”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2361): error C3861: “_strnset”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2370): error C3861: “_strset_s”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2380): error C3861: “_strset”: 找不到标识符
+E:\wxWindows-2.4.2\wxWindows-2.4.2\include\wx/wxchar.h(573): error C3861: “strlen”: 找不到标识符
+E:\wxWindows-2.4.2\wxWindows-2.4.2\include\wx/buffer.h(98): error C3861: “strdup”: 找不到标识符
+E:\wxWindows-2.4.2\wxWindows-2.4.2\include\wx/buffer.h(98): fatal error C1903: 无法从以前的错误中恢复；正在停止编译
+  histogramCut.cpp
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2286): error C3861: “strspn”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2293): error C3861: “strncpy_s”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2304): error C3861: “strncpy”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2314): error C3861: “strncat_s”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2325): error C3861: “strncat”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2336): error C3861: “strtok”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2344): error C3861: “strtok_s”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2351): error C3861: “_strnset_s”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2361): error C3861: “_strnset”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2370): error C3861: “_strset_s”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2380): error C3861: “_strset”: 找不到标识符
+E:\wxWindows-2.4.2\wxWindows-2.4.2\include\wx/wxchar.h(573): error C3861: “strlen”: 找不到标识符
+E:\wxWindows-2.4.2\wxWindows-2.4.2\include\wx/buffer.h(98): error C3861: “strdup”: 找不到标识符
+E:\wxWindows-2.4.2\wxWindows-2.4.2\include\wx/buffer.h(98): fatal error C1903: 无法从以前的错误中恢复；正在停止编译
+  image.cpp
+graphcuts\image.cpp(97): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\stdio.h(218) : 参见“fopen”的声明
+graphcuts\image.cpp(185): warning C4244: “=”: 从“int”转换到“unsigned char”，可能丢失数据
+graphcuts\image.cpp(186): warning C4244: “=”: 从“int”转换到“unsigned char”，可能丢失数据
+graphcuts\image.cpp(191): warning C4244: “=”: 从“int”转换到“unsigned char”，可能丢失数据
+graphcuts\image.cpp(192): warning C4244: “=”: 从“int”转换到“unsigned char”，可能丢失数据
+graphcuts\image.cpp(193): warning C4244: “=”: 从“int”转换到“unsigned char”，可能丢失数据
+graphcuts\image.cpp(242): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\stdio.h(218) : 参见“fopen”的声明
+  imageCut.cpp
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2286): error C3861: “strspn”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2293): error C3861: “strncpy_s”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2304): error C3861: “strncpy”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2314): error C3861: “strncat_s”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2325): error C3861: “strncat”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2336): error C3861: “strtok”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2344): error C3861: “strtok_s”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2351): error C3861: “_strnset_s”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2361): error C3861: “_strnset”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2370): error C3861: “_strset_s”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2380): error C3861: “_strset”: 找不到标识符
+E:\wxWindows-2.4.2\wxWindows-2.4.2\include\wx/wxchar.h(573): error C3861: “strlen”: 找不到标识符
+E:\wxWindows-2.4.2\wxWindows-2.4.2\include\wx/buffer.h(98): error C3861: “strdup”: 找不到标识符
+E:\wxWindows-2.4.2\wxWindows-2.4.2\include\wx/buffer.h(98): fatal error C1903: 无法从以前的错误中恢复；正在停止编译
+  imageData.cpp
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2286): error C3861: “strspn”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2293): error C3861: “strncpy_s”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2304): error C3861: “strncpy”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2314): error C3861: “strncat_s”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2325): error C3861: “strncat”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2336): error C3861: “strtok”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2344): error C3861: “strtok_s”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2351): error C3861: “_strnset_s”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2361): error C3861: “_strnset”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2370): error C3861: “_strset_s”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2380): error C3861: “_strset”: 找不到标识符
+E:\wxWindows-2.4.2\wxWindows-2.4.2\include\wx/wxchar.h(573): error C3861: “strlen”: 找不到标识符
+E:\wxWindows-2.4.2\wxWindows-2.4.2\include\wx/buffer.h(98): error C3861: “strdup”: 找不到标识符
+E:\wxWindows-2.4.2\wxWindows-2.4.2\include\wx/buffer.h(98): fatal error C1903: 无法从以前的错误中恢复；正在停止编译
+  luminanceCut.cpp
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2286): error C3861: “strspn”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2293): error C3861: “strncpy_s”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2304): error C3861: “strncpy”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2314): error C3861: “strncat_s”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2325): error C3861: “strncat”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2336): error C3861: “strtok”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2344): error C3861: “strtok_s”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2351): error C3861: “_strnset_s”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2361): error C3861: “_strnset”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2370): error C3861: “_strset_s”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2380): error C3861: “_strset”: 找不到标识符
+E:\wxWindows-2.4.2\wxWindows-2.4.2\include\wx/wxchar.h(573): error C3861: “strlen”: 找不到标识符
+E:\wxWindows-2.4.2\wxWindows-2.4.2\include\wx/buffer.h(98): error C3861: “strdup”: 找不到标识符
+E:\wxWindows-2.4.2\wxWindows-2.4.2\include\wx/buffer.h(98): fatal error C1903: 无法从以前的错误中恢复；正在停止编译
+  maxDiffCut.cpp
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2286): error C3861: “strspn”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2293): error C3861: “strncpy_s”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2304): error C3861: “strncpy”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2314): error C3861: “strncat_s”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2325): error C3861: “strncat”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2336): error C3861: “strtok”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2344): error C3861: “strtok_s”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2351): error C3861: “_strnset_s”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2361): error C3861: “_strnset”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2370): error C3861: “_strset_s”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2380): error C3861: “_strset”: 找不到标识符
+E:\wxWindows-2.4.2\wxWindows-2.4.2\include\wx/wxchar.h(573): error C3861: “strlen”: 找不到标识符
+E:\wxWindows-2.4.2\wxWindows-2.4.2\include\wx/buffer.h(98): error C3861: “strdup”: 找不到标识符
+E:\wxWindows-2.4.2\wxWindows-2.4.2\include\wx/buffer.h(98): fatal error C1903: 无法从以前的错误中恢复；正在停止编译
+  maxflow.cpp
+graphcuts\maxflow.cpp(51): warning C4127: 条件表达式是常量
+graphcuts\maxflow.cpp(222): warning C4127: 条件表达式是常量
+graphcuts\maxflow.cpp(306): warning C4127: 条件表达式是常量
+graphcuts\maxflow.cpp(385): warning C4127: 条件表达式是常量
+  panoCut.cpp
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2286): error C3861: “strspn”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2293): error C3861: “strncpy_s”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2304): error C3861: “strncpy”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2314): error C3861: “strncat_s”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2325): error C3861: “strncat”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2336): error C3861: “strtok”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2344): error C3861: “strtok_s”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2351): error C3861: “_strnset_s”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2361): error C3861: “_strnset”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2370): error C3861: “_strset_s”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2380): error C3861: “_strset”: 找不到标识符
+E:\wxWindows-2.4.2\wxWindows-2.4.2\include\wx/wxchar.h(573): error C3861: “strlen”: 找不到标识符
+E:\wxWindows-2.4.2\wxWindows-2.4.2\include\wx/buffer.h(98): error C3861: “strdup”: 找不到标识符
+E:\wxWindows-2.4.2\wxWindows-2.4.2\include\wx/buffer.h(98): fatal error C1903: 无法从以前的错误中恢复；正在停止编译
+  portraitcut.cpp
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2286): error C3861: “strspn”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2293): error C3861: “strncpy_s”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2304): error C3861: “strncpy”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2314): error C3861: “strncat_s”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2325): error C3861: “strncat”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2336): error C3861: “strtok”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2344): error C3861: “strtok_s”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2351): error C3861: “_strnset_s”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2361): error C3861: “_strnset”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2370): error C3861: “_strset_s”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2380): error C3861: “_strset”: 找不到标识符
+E:\wxWindows-2.4.2\wxWindows-2.4.2\include\wx/wxchar.h(573): error C3861: “strlen”: 找不到标识符
+E:\wxWindows-2.4.2\wxWindows-2.4.2\include\wx/buffer.h(98): error C3861: “strdup”: 找不到标识符
+E:\wxWindows-2.4.2\wxWindows-2.4.2\include\wx/buffer.h(98): fatal error C1903: 无法从以前的错误中恢复；正在停止编译
+  timelapseCut.cpp
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2286): error C3861: “strspn”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2293): error C3861: “strncpy_s”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2304): error C3861: “strncpy”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2314): error C3861: “strncat_s”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2325): error C3861: “strncat”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2336): error C3861: “strtok”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2344): error C3861: “strtok_s”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2351): error C3861: “_strnset_s”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2361): error C3861: “_strnset”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2370): error C3861: “_strset_s”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2380): error C3861: “_strset”: 找不到标识符
+E:\wxWindows-2.4.2\wxWindows-2.4.2\include\wx/wxchar.h(573): error C3861: “strlen”: 找不到标识符
+E:\wxWindows-2.4.2\wxWindows-2.4.2\include\wx/buffer.h(98): error C3861: “strdup”: 找不到标识符
+E:\wxWindows-2.4.2\wxWindows-2.4.2\include\wx/buffer.h(98): fatal error C1903: 无法从以前的错误中恢复；正在停止编译
+  blend.cpp
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2286): error C3861: “strspn”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2293): error C3861: “strncpy_s”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2304): error C3861: “strncpy”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2314): error C3861: “strncat_s”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2325): error C3861: “strncat”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2336): error C3861: “strtok”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2344): error C3861: “strtok_s”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2351): error C3861: “_strnset_s”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2361): error C3861: “_strnset”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2370): error C3861: “_strset_s”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2380): error C3861: “_strset”: 找不到标识符
+E:\wxWindows-2.4.2\wxWindows-2.4.2\include\wx/wxchar.h(573): error C3861: “strlen”: 找不到标识符
+E:\wxWindows-2.4.2\wxWindows-2.4.2\include\wx/buffer.h(98): error C3861: “strdup”: 找不到标识符
+E:\wxWindows-2.4.2\wxWindows-2.4.2\include\wx/buffer.h(98): fatal error C1903: 无法从以前的错误中恢复；正在停止编译
+  blendFuncs.cpp
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2286): error C3861: “strspn”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2293): error C3861: “strncpy_s”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2304): error C3861: “strncpy”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2314): error C3861: “strncat_s”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2325): error C3861: “strncat”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2336): error C3861: “strtok”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2344): error C3861: “strtok_s”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2351): error C3861: “_strnset_s”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2361): error C3861: “_strnset”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2370): error C3861: “_strset_s”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2380): error C3861: “_strset”: 找不到标识符
+E:\wxWindows-2.4.2\wxWindows-2.4.2\include\wx/wxchar.h(573): error C3861: “strlen”: 找不到标识符
+E:\wxWindows-2.4.2\wxWindows-2.4.2\include\wx/buffer.h(98): error C3861: “strdup”: 找不到标识符
+E:\wxWindows-2.4.2\wxWindows-2.4.2\include\wx/buffer.h(98): fatal error C1903: 无法从以前的错误中恢复；正在停止编译
+  oldBlend.cpp
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2286): error C3861: “strspn”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2293): error C3861: “strncpy_s”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2304): error C3861: “strncpy”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2314): error C3861: “strncat_s”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2325): error C3861: “strncat”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2336): error C3861: “strtok”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2344): error C3861: “strtok_s”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2351): error C3861: “_strnset_s”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2361): error C3861: “_strnset”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2370): error C3861: “_strset_s”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2380): error C3861: “_strset”: 找不到标识符
+E:\wxWindows-2.4.2\wxWindows-2.4.2\include\wx/wxchar.h(573): error C3861: “strlen”: 找不到标识符
+E:\wxWindows-2.4.2\wxWindows-2.4.2\include\wx/buffer.h(98): error C3861: “strdup”: 找不到标识符
+E:\wxWindows-2.4.2\wxWindows-2.4.2\include\wx/buffer.h(98): fatal error C1903: 无法从以前的错误中恢复；正在停止编译
+  baseGLViewer.cpp
+E:\wxWindows-2.4.2\wxWindows-2.4.2\include\wx/buffer.h(98): error C3861: “strdup”: 找不到标识符
+E:\wxWindows-2.4.2\wxWindows-2.4.2\include\wx/buffer.h(98): fatal error C1903: 无法从以前的错误中恢复；正在停止编译
+  正在生成代码...
+g:\projects\stop motion\schedule\15-wek-boundary-process\photomontage\fuse_1b\tmpfuse\graphcuts\maxflow.cpp(218): warning C4706: 条件表达式内的赋值
+g:\projects\stop motion\schedule\15-wek-boundary-process\photomontage\fuse_1b\tmpfuse\graphcuts\maxflow.cpp(257): warning C4706: 条件表达式内的赋值
+g:\projects\stop motion\schedule\15-wek-boundary-process\photomontage\fuse_1b\tmpfuse\graphcuts\maxflow.cpp(271): warning C4706: 条件表达式内的赋值
+g:\projects\stop motion\schedule\15-wek-boundary-process\photomontage\fuse_1b\tmpfuse\graphcuts\maxflow.cpp(302): warning C4706: 条件表达式内的赋值
+g:\projects\stop motion\schedule\15-wek-boundary-process\photomontage\fuse_1b\tmpfuse\graphcuts\maxflow.cpp(341): warning C4706: 条件表达式内的赋值
+g:\projects\stop motion\schedule\15-wek-boundary-process\photomontage\fuse_1b\tmpfuse\graphcuts\maxflow.cpp(355): warning C4706: 条件表达式内的赋值
+g:\projects\stop motion\schedule\15-wek-boundary-process\photomontage\fuse_1b\tmpfuse\graphcuts\maxflow.cpp(387): warning C4706: 条件表达式内的赋值
+g:\projects\stop motion\schedule\15-wek-boundary-process\photomontage\fuse_1b\tmpfuse\graphcuts\maxflow.cpp(394): warning C4706: 条件表达式内的赋值
+g:\projects\stop motion\schedule\15-wek-boundary-process\photomontage\fuse_1b\tmpfuse\graphcuts\maxflow.cpp(463): warning C4706: 条件表达式内的赋值
+g:\projects\stop motion\schedule\15-wek-boundary-process\photomontage\fuse_1b\tmpfuse\graphcuts\maxflow.cpp(468): warning C4706: 条件表达式内的赋值
+g:\projects\stop motion\schedule\15-wek-boundary-process\photomontage\fuse_1b\tmpfuse\graphcuts\maxflow.cpp(53): warning C4706: 条件表达式内的赋值
+g:\projects\stop motion\schedule\15-wek-boundary-process\photomontage\fuse_1b\tmpfuse\graphcuts\image.cpp(137): warning C4706: 条件表达式内的赋值
+g:\projects\stop motion\schedule\15-wek-boundary-process\photomontage\fuse_1b\tmpfuse\graphcuts\image.cpp(144): warning C4706: 条件表达式内的赋值
+g:\projects\stop motion\schedule\15-wek-boundary-process\photomontage\fuse_1b\tmpfuse\graphcuts\image.cpp(172): warning C4706: 条件表达式内的赋值
+g:\projects\stop motion\schedule\15-wek-boundary-process\photomontage\fuse_1b\tmpfuse\graphcuts\image.cpp(180): warning C4706: 条件表达式内的赋值
+  正在编译...
+  bestFitAffine.cpp
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2286): error C3861: “strspn”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2293): error C3861: “strncpy_s”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2304): error C3861: “strncpy”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2314): error C3861: “strncat_s”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2325): error C3861: “strncat”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2336): error C3861: “strtok”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2344): error C3861: “strtok_s”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2351): error C3861: “_strnset_s”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2361): error C3861: “_strnset”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2370): error C3861: “_strset_s”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2380): error C3861: “_strset”: 找不到标识符
+E:\wxWindows-2.4.2\wxWindows-2.4.2\include\wx/wxchar.h(573): error C3861: “strlen”: 找不到标识符
+E:\wxWindows-2.4.2\wxWindows-2.4.2\include\wx/buffer.h(98): error C3861: “strdup”: 找不到标识符
+E:\wxWindows-2.4.2\wxWindows-2.4.2\include\wx/buffer.h(98): fatal error C1903: 无法从以前的错误中恢复；正在停止编译
+  brush.cpp
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2286): error C3861: “strspn”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2293): error C3861: “strncpy_s”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2304): error C3861: “strncpy”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2314): error C3861: “strncat_s”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2325): error C3861: “strncat”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2336): error C3861: “strtok”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2344): error C3861: “strtok_s”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2351): error C3861: “_strnset_s”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2361): error C3861: “_strnset”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2370): error C3861: “_strset_s”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2380): error C3861: “_strset”: 找不到标识符
+E:\wxWindows-2.4.2\wxWindows-2.4.2\include\wx/wxchar.h(573): error C3861: “strlen”: 找不到标识符
+E:\wxWindows-2.4.2\wxWindows-2.4.2\include\wx/buffer.h(98): error C3861: “strdup”: 找不到标识符
+E:\wxWindows-2.4.2\wxWindows-2.4.2\include\wx/buffer.h(98): fatal error C1903: 无法从以前的错误中恢复；正在停止编译
+  compViewer.cpp
+E:\wxWindows-2.4.2\wxWindows-2.4.2\include\wx/buffer.h(98): error C3861: “strdup”: 找不到标识符
+E:\wxWindows-2.4.2\wxWindows-2.4.2\include\wx/buffer.h(98): fatal error C1903: 无法从以前的错误中恢复；正在停止编译
+  constantEditor.cpp
+E:\wxWindows-2.4.2\wxWindows-2.4.2\include\wx/buffer.h(98): error C3861: “strdup”: 找不到标识符
+E:\wxWindows-2.4.2\wxWindows-2.4.2\include\wx/buffer.h(98): fatal error C1903: 无法从以前的错误中恢复；正在停止编译
+  fuse.cpp
+E:\wxWindows-2.4.2\wxWindows-2.4.2\include\wx/buffer.h(98): error C3861: “strdup”: 找不到标识符
+E:\wxWindows-2.4.2\wxWindows-2.4.2\include\wx/buffer.h(98): fatal error C1903: 无法从以前的错误中恢复；正在停止编译
+  hb.cpp
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2286): error C3861: “strspn”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2293): error C3861: “strncpy_s”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2304): error C3861: “strncpy”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2314): error C3861: “strncat_s”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2325): error C3861: “strncat”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2336): error C3861: “strtok”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2344): error C3861: “strtok_s”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2351): error C3861: “_strnset_s”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2361): error C3861: “_strnset”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2370): error C3861: “_strset_s”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2380): error C3861: “_strset”: 找不到标识符
+E:\wxWindows-2.4.2\wxWindows-2.4.2\include\wx/wxchar.h(573): error C3861: “strlen”: 找不到标识符
+E:\wxWindows-2.4.2\wxWindows-2.4.2\include\wx/buffer.h(98): error C3861: “strdup”: 找不到标识符
+E:\wxWindows-2.4.2\wxWindows-2.4.2\include\wx/buffer.h(98): fatal error C1903: 无法从以前的错误中恢复；正在停止编译
+  ImageAbs.cpp
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2286): error C3861: “strspn”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2293): error C3861: “strncpy_s”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2304): error C3861: “strncpy”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2314): error C3861: “strncat_s”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2325): error C3861: “strncat”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2336): error C3861: “strtok”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2344): error C3861: “strtok_s”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2351): error C3861: “_strnset_s”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2361): error C3861: “_strnset”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2370): error C3861: “_strset_s”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2380): error C3861: “_strset”: 找不到标识符
+E:\wxWindows-2.4.2\wxWindows-2.4.2\include\wx/wxchar.h(573): error C3861: “strlen”: 找不到标识符
+E:\wxWindows-2.4.2\wxWindows-2.4.2\include\wx/buffer.h(98): error C3861: “strdup”: 找不到标识符
+E:\wxWindows-2.4.2\wxWindows-2.4.2\include\wx/buffer.h(98): fatal error C1903: 无法从以前的错误中恢复；正在停止编译
+  linearSolver.cpp
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2286): error C3861: “strspn”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2293): error C3861: “strncpy_s”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2304): error C3861: “strncpy”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2314): error C3861: “strncat_s”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2325): error C3861: “strncat”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2336): error C3861: “strtok”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2344): error C3861: “strtok_s”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2351): error C3861: “_strnset_s”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2361): error C3861: “_strnset”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2370): error C3861: “_strset_s”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2380): error C3861: “_strset”: 找不到标识符
+E:\wxWindows-2.4.2\wxWindows-2.4.2\include\wx/wxchar.h(573): error C3861: “strlen”: 找不到标识符
+E:\wxWindows-2.4.2\wxWindows-2.4.2\include\wx/buffer.h(98): error C3861: “strdup”: 找不到标识符
+E:\wxWindows-2.4.2\wxWindows-2.4.2\include\wx/buffer.h(98): fatal error C1903: 无法从以前的错误中恢复；正在停止编译
+  myBusyInfo.cpp
+E:\wxWindows-2.4.2\wxWindows-2.4.2\include\wx/buffer.h(98): error C3861: “strdup”: 找不到标识符
+E:\wxWindows-2.4.2\wxWindows-2.4.2\include\wx/buffer.h(98): fatal error C1903: 无法从以前的错误中恢复；正在停止编译
+  myGLCanvas.cpp
+E:\wxWindows-2.4.2\wxWindows-2.4.2\include\wx/buffer.h(98): error C3861: “strdup”: 找不到标识符
+E:\wxWindows-2.4.2\wxWindows-2.4.2\include\wx/buffer.h(98): fatal error C1903: 无法从以前的错误中恢复；正在停止编译
+  sortedStackViewer.cpp
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2286): error C3861: “strspn”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2293): error C3861: “strncpy_s”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2304): error C3861: “strncpy”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2314): error C3861: “strncat_s”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2325): error C3861: “strncat”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2336): error C3861: “strtok”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2344): error C3861: “strtok_s”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2351): error C3861: “_strnset_s”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2361): error C3861: “_strnset”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2370): error C3861: “_strset_s”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2380): error C3861: “_strset”: 找不到标识符
+E:\wxWindows-2.4.2\wxWindows-2.4.2\include\wx/wxchar.h(573): error C3861: “strlen”: 找不到标识符
+E:\wxWindows-2.4.2\wxWindows-2.4.2\include\wx/buffer.h(98): error C3861: “strdup”: 找不到标识符
+E:\wxWindows-2.4.2\wxWindows-2.4.2\include\wx/buffer.h(98): fatal error C1903: 无法从以前的错误中恢复；正在停止编译
+  stackViewer.cpp
+E:\wxWindows-2.4.2\wxWindows-2.4.2\include\wx/buffer.h(98): error C3861: “strdup”: 找不到标识符
+E:\wxWindows-2.4.2\wxWindows-2.4.2\include\wx/buffer.h(98): fatal error C1903: 无法从以前的错误中恢复；正在停止编译
+  steppableLinearSolver.cpp
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2286): error C3861: “strspn”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2293): error C3861: “strncpy_s”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2304): error C3861: “strncpy”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2314): error C3861: “strncat_s”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2325): error C3861: “strncat”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2336): error C3861: “strtok”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2344): error C3861: “strtok_s”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2351): error C3861: “_strnset_s”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2361): error C3861: “_strnset”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2370): error C3861: “_strset_s”: 找不到标识符
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(2380): error C3861: “_strset”: 找不到标识符
+E:\wxWindows-2.4.2\wxWindows-2.4.2\include\wx/wxchar.h(573): error C3861: “strlen”: 找不到标识符
+E:\wxWindows-2.4.2\wxWindows-2.4.2\include\wx/buffer.h(98): error C3861: “strdup”: 找不到标识符
+E:\wxWindows-2.4.2\wxWindows-2.4.2\include\wx/buffer.h(98): fatal error C1903: 无法从以前的错误中恢复；正在停止编译
+  正在生成代码...
