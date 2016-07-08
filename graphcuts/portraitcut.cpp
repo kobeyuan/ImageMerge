@@ -372,7 +372,8 @@ float PortraitCut::BVZ_interaction_penalty(Coord p, Coord np, ushort l, ushort n
 
   unsigned char *Il, *Inl;
 
-  if (_cuttype == C_NORMAL || _cuttype == C_GRAD) {
+  if (_cuttype == C_NORMAL || _cuttype == C_GRAD)
+  {
     // difference at p pixel
     a=0;
     Il = _imptr(l,p); 
@@ -398,7 +399,8 @@ float PortraitCut::BVZ_interaction_penalty(Coord p, Coord np, ushort l, ushort n
     M /=6.f;
     
     // gradient denominator
-    if (_cuttype == C_GRAD) {
+    if (_cuttype == C_GRAD) 
+	{
       float G;
       if (p.x!=np.x) {  // vertical cut, vertical Sobel filter
 	Coord minp(min(p.x,np.x), p.y);
@@ -411,7 +413,8 @@ float PortraitCut::BVZ_interaction_penalty(Coord p, Coord np, ushort l, ushort n
       }
       else {  // horizontal cut, horizontal Sobel filter
 	Coord minp(p.x, min(p.y,np.y));
-	if (p.x>0 && p.x<_w-1) {
+	if (p.x>0 && p.x<_w-1)
+	{
 	  G = .5f*(_idata->horizGradMagLookup(l,minp) + _idata->horizGradMagLookup(nl,minp));
 	  //G = MIN(horizGradMagLookup(l,minp), horizGradMagLookup(nl,minp));
 	}
@@ -420,10 +423,10 @@ float PortraitCut::BVZ_interaction_penalty(Coord p, Coord np, ushort l, ushort n
       }
       
       
-      if (G==0)
-	M = A_INFINITY;
-      else
-	M /= G;
+		  if (G==0)
+		M = A_INFINITY;
+		  else
+		M /= G;
     }
   }
 
