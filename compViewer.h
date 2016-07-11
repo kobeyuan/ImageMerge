@@ -16,6 +16,14 @@
 #include "myBusyInfo.h"
 //#include <wx/busyinfo.h>
 
+// using opencv lib
+// #include "cv.h"
+// #include "opencv2/core/core.hpp"
+// #include "opencv2/imgproc/imgproc.hpp"
+// #include "opencv2/highgui/highgui.hpp"
+// #include "opencv2/ml/ml.hpp"
+
+//
 #define C_COLORICONSIZE 15
 #define C_POPUPICONSIZE 10
 
@@ -164,6 +172,10 @@ class MyStatusBar : public wxStatusBar {
     
       void SetInertiaConstant (float f) { if (_dc) _dc->_inertia = f; }
       void SetCutType (CutType c) { if (_dc) _dc->setCuttype(c); }
+
+
+	  //20160710
+	  void visuStencil(const short* _stencil);
 
     private:
 	

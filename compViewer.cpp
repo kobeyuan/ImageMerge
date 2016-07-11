@@ -1330,7 +1330,8 @@ void CompViewer::handleMouseMove(wxCommandEvent& event) {
 void CompViewer::handleStroke2(wxCommandEvent& event) {
 
 
-  if (_dc->multiRegion() || _dc->hasFilter() || _brushType==S_NUM) {
+  if (_dc->multiRegion() || _dc->hasFilter() || _brushType==S_NUM) 
+  {
     handleStroke(event);
     return;
   }
@@ -1360,6 +1361,7 @@ void CompViewer::handleStroke2(wxCommandEvent& event) {
     int dialNum = _sortedStackWidget->getCurrNum();
     _dc->setDialNum(dialNum);
     const short* stencil = brush->getStencil();
+
     std::vector<CutResult> cr;
     float tmp = _dc->_inertia;
     _dc->_inertia = _sortedStackWidget->getInertiaValue();
@@ -1658,7 +1660,8 @@ void CompViewer::handleStroke(wxCommandEvent& event) {
 
 
   // handle it
-  if (_brushType==S_COLOR) {
+  if (_brushType==S_COLOR) 
+  {
     Vec3f dialColor;
     dialColor.Set(float(_eyedropColor.r())/255.f,
 		  float(_eyedropColor.g())/255.f,   
@@ -2302,6 +2305,29 @@ void CompViewer::DefaultSettings (wxCommandEvent& event) {
 
 }
 
+// add by kobe yuan
+void CompViewer::visuStencil(const short* _stencil)
+{
+	//if (!!_stencil)
+	//{
+	//	cv::Mat visMask;
+	//	visMask.create(_w,_h,CV_32FC1);
+	//	int index = 0;
+	//	for (int y = 0; y< _h; ++y)
+	//	{
+	//		for (int x = 0; x < _w; ++x, ++index)
+	//		{
+	//			visMask.at<uchar>(y,x) = _stencil[index];
+	//		}
+	//	}
+
+	//	cv::imshow("stroke", visMask);
+
+	//}else
+	//{
+	//	return;
+	//}
+}
 //----------- NON-MEMBERS
 
 BEGIN_EVENT_TABLE(MyStatusBar, wxStatusBar)

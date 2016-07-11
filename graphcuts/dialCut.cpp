@@ -146,7 +146,8 @@ void DialCut::takeStroke2(const short* stroked, StrokeType st, std::vector<CutRe
 
   assert(!_multiRegion && !_filter);
 
-  if (st==S_ERASE) {
+  if (st==S_ERASE) 
+  {
     addStrokeToAll(spans, st);
     recreateRelevant();
     return;
@@ -156,33 +157,38 @@ void DialCut::takeStroke2(const short* stroked, StrokeType st, std::vector<CutRe
   // Init _L, initial state
   memcpy(_L, _labels, _w*_h*sizeof(ushort));
   double spatial = BVZ_ComputeSpatialOnly(), E;
+
+  //逆向遍历相关的label
   for (std::vector<ushort>::iterator c = _newRelevant.begin(); 
-       c != _newRelevant.end(); ++c) {
+       c != _newRelevant.end(); ++c) 
+  {
     _dialNum = *c;
     addStrokeToAll(spans, S_NUM);
     //if (E < 0) {
-    makeInertiaRelevant(spans);
+    makeInertiaRelevant(spans); // distance map-  // initialize stroke points
     E = spatial + BVZ_ComputeDataOnly();
     //E = BVZ_ComputeEnergy();
     printf("starting energy %f\n",E);
     //}
     CutResult newcr;
     newcr._num = *c;
-    newcr._im = _idata->images(*c);  assert(newcr._im);
-    newcr._energy = BVZ_Expand(*c, E);
-    if (st!=S_NUM) {
+    newcr._im = _idata->images(*c);  assert(newcr._im);//source image
+    newcr._energy = BVZ_Expand(*c, E);//对label c 进行expansion。
+    if (st!=S_NUM) 
+	{
       addStrokeToAll(spans, st);
       newcr._energy += strokeCost(spans); // assumes S_NUM constraint completely satisfied
     }
     printf("computed energy %d as %f\n",*c, newcr._energy);
     //assert(newcr._energy <= E);
-	if (newcr._energy <= E) {
+	if (newcr._energy <= E) 
+	{
 	    newcr._mask = new bool[_w*_h];  
 		createMask(newcr._mask, *c);
 		cr.push_back(newcr);
 	}
     memcpy(_labels,  _L, _w*_h*sizeof(ushort));
-  }
+  }//end for _newRelevant
 
   //addStrokeToAll(spans, st);   //not sure if we need this here
   //sort(cr.begin(), cr.end());  // sorts in ascending order
@@ -291,7 +297,8 @@ void DialCut::takeStroke(const short* stroked, StrokeType st) {
   vector<RowSpan> spans;
   compactStroke(stroked,spans);
 
-  if (_multiRegion) {
+  if (_multiRegion) 
+  {
     // Init _L, initial state
     memcpy(_L, _labels, _w*_h*sizeof(ushort));
     addStrokeToAll(spans, st);
@@ -303,7 +310,8 @@ void DialCut::takeStroke(const short* stroked, StrokeType st) {
     return;
   }
   
-  if (_filter) {
+  if (_filter)
+  {
     addStrokeToAll(spans, st);
     addAllToRelevant();
     computeMulti();
@@ -337,11 +345,13 @@ void DialCut::takeStroke(const short* stroked, StrokeType st) {
   time_t startTime, endTime;
   startTime = time(NULL);
 
-  if (!_multiRegion) {
+  if (!_multiRegion) 
+  {
     computeSingle();
     recreateRelevant();
   }
-  else {
+  else 
+  {
     for (vector<ushort>::iterator c=_newRelevant.begin(); c!=_newRelevant.end(); ++c)
       _relevant.insert(*c);
     //_relevant += _newRelevant;
@@ -358,27 +368,32 @@ void DialCut::takeStroke(const short* stroked, StrokeType st) {
   //_currStroke = NULL;
 }
 
-void DialCut::addStrokeToAll(const vector<RowSpan>& stroke, StrokeType st) { 
+void DialCut::addStrokeToAll(const vector<RowSpan>& stroke, StrokeType st) 
+{ 
   int x, y, index;
-  for (unsigned int j=0; j<stroke.size(); ++j) {
-    x = stroke[j]._x; y = stroke[j]._y;
-    for (int s=0; s<stroke[j]._num; ++s) {
-      index = (y*_w)+x+s;
-      if (st==S_ERASE) {
-	_allStrokes[index]._st = S_NONE;
-	continue;
-      }
-      _allStrokes[index]._st = st;
-      if (st==S_NUM)
-	_allStrokes[index]._num = _dialNum;
-      else if (st==S_COLOR)
-	_allStrokes[index]._dialColor = _dialColor;
-      else if (st==S_DIFF) {
-	const unsigned char* col = _imptr(_labels[index], Coord(x+s,y));
-	Vec3i colv(col[0], col[1], col[2]);
-	_allStrokes[index]._avoidColor = colv;
-      }
-    }
+  for (unsigned int j=0; j<stroke.size(); ++j) 
+  {
+	  x = stroke[j]._x; y = stroke[j]._y;
+	  for (int s=0; s<stroke[j]._num; ++s) 
+	  {
+		  index = (y*_w)+x+s;
+		  if (st==S_ERASE) 
+		  {
+			  _allStrokes[index]._st = S_NONE;
+			  continue;
+		  }
+		  _allStrokes[index]._st = st;
+		  if (st==S_NUM)
+			  _allStrokes[index]._num = _dialNum;
+		  else if (st==S_COLOR)
+			  _allStrokes[index]._dialColor = _dialColor;
+		  else if (st==S_DIFF) 
+		  {
+			  const unsigned char* col = _imptr(_labels[index], Coord(x+s,y));
+			  Vec3i colv(col[0], col[1], col[2]);
+			  _allStrokes[index]._avoidColor = colv;
+		  }
+	  }
   }
 }
 
@@ -585,53 +600,54 @@ float DialCut::BVZ_data_penalty(Coord p, ushort d) {
   Coord dp = p;
   _displace(dp,d);
   
-  if (dp>=Coord(0,0) && dp<_idata->images(d)->_size) {  
+  if (dp>=Coord(0,0) && dp<_idata->images(d)->_size) 
+  {  
     int index = CINDEX(p);
 
-    /*    if (_required[index] != -1) {
-	  if (d==_required[index]) // good
-	  return 0.f;
-	  else                     // bad
-	  return A_INFINITY;
-	  }*/
-
-    if (_globalCompute) {
+    if (_globalCompute)
+	{
       return _allObj.getObj(_globalObjType)->getDataCost(p, d);
-    }
-    
-    else {  // stroke
-      assert(_allStrokes);
-      // not required, in bounds, do magic
-      if (_allStrokes[index]._st !=S_NONE) {// under current stroke
-	const StrokeData& sd = _allStrokes[index];
-	if (validStrokeType(sd._st))
-	  return  _allObj.getObj(sd._st)->getDataCost(&sd, p, d);
-	else if (sd._st == S_DIFF) {
-	  const unsigned char* col = _imptr(d,p);
-	  Vec3i c(col[0], col[1], col[2]);
-	  float dist = sqrt(sd._avoidColor.distanceTo2(c));
-	  if (dist < 25.)
-	    return _bright * ( 25. - dist);
-	  else
-	    return 0;
-	}
-	else {
-	  assert(0);
-	  return 0;
-	}
-      }    
+    }   
+    else 
+	{  // stroke
+		  assert(_allStrokes);
+		  // not required, in bounds, do magic
+		  if (_allStrokes[index]._st !=S_NONE)
+		  {// under current stroke
+			  const StrokeData& sd = _allStrokes[index];
+			  if (validStrokeType(sd._st))
+				  return  _allObj.getObj(sd._st)->getDataCost(&sd, p, d); //那个类型的stroke获得那种相应的数据项。
+			  else if (sd._st == S_DIFF) 
+			  {
+				  const unsigned char* col = _imptr(d,p);
+				  Vec3i c(col[0], col[1], col[2]);
+				  float dist = sqrt(sd._avoidColor.distanceTo2(c));
 
-      // not under stroke
-      if (_inertiaRelevant) {
-	if (d == _L[index])
-	  return 0.f;  // stay same, you did, good
-	else {
-	  assert(_strokeDmap);
-	  return _inertia*.1*_strokeDmap->dist(p.x, p.y);
-	}
-      }
+				  if (dist < 25.)
+					  return _bright * ( 25. - dist);
+				  else
+					  return 0;
+			  }
+			  else 
+			  {
+				  assert(0);
+				  return 0;
+			  }
+		  }    
 
-      return 0.f;
+		  // not under stroke--在非stroke区域的pixel。
+		  if (_inertiaRelevant) 
+		  {
+			if (d == _L[index])
+				return 0.f;  // stay same, you did, good
+			else
+			{
+				assert(_strokeDmap);
+				return _inertia*.1*_strokeDmap->dist(p.x, p.y);
+			}
+		  }
+
+		  return 0.f;
 
     } // end if stroke
 

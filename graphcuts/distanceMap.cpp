@@ -49,7 +49,8 @@ void DistanceMap::propagate(const int loc, const int prop_loc, const int dx, con
   float tmpx = _xDist[prop_loc] + dx;
   float tmpy = _yDist[prop_loc] + dy;
   float  newVal = tmpx*tmpx + tmpy*tmpy;
-  if (newVal < _data[loc] || (newVal==_data[loc] && fabs(tmpx)>fabs(_xDist[loc]))) {
+  if (newVal < _data[loc] || (newVal==_data[loc] && fabs(tmpx)>fabs(_xDist[loc]))) 
+  {
     _xDist[loc] = tmpx;
     _yDist[loc] = tmpy;
     _data[loc] = newVal;

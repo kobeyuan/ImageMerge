@@ -147,7 +147,7 @@
     <ClCompile>
       <AdditionalOptions>/I$(wxwin)\lib\mswd  %(AdditionalOptions)</AdditionalOptions>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>$(wxwin)\include;$(wxwin)\contrib\include;.\GL;E:\wxWindows-2.4.2\wxWindows-2.4.2\src\msw;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(wxwin)\include;$(wxwin)\contrib\include;.\GL;E:\wxWindows-2.4.2\wxWindows-2.4.2\src\msw;$(OpenCVDir)\include\opencv2;$(OpenCVDir)\include\opencv;$(OpenCVDir)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;_WINDOWS;WINVER=0x400;_MT;wxUSE_GUI=1;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <PrecompiledHeader />
@@ -161,7 +161,7 @@
       <CompileAs>Default</CompileAs>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>$(wxwin)\lib\zlibd.lib;$(wxwin)\lib\regexd.lib;$(wxwin)\lib\pngd.lib;$(wxwin)\lib\jpegd.lib;$(wxwin)\lib\tiffd.lib;$(wxwin)\lib\wxmswd.lib;$(wxwin)\lib\wxbased.lib;$(wxwin)\lib\wxunivd.lib;$(wxwin)\lib\wxmswud.lib;opengl32.lib;glu32.lib;odbc32.lib;odbccp32.lib;comctl32.lib;rpcrt4.lib;wsock32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>$(wxwin)\lib\zlibd.lib;$(wxwin)\lib\regexd.lib;$(wxwin)\lib\pngd.lib;$(wxwin)\lib\jpegd.lib;$(wxwin)\lib\tiffd.lib;$(wxwin)\lib\wxmswd.lib;$(wxwin)\lib\wxbased.lib;$(wxwin)\lib\wxunivd.lib;$(wxwin)\lib\wxmswud.lib;opengl32.lib;glu32.lib;odbc32.lib;odbccp32.lib;comctl32.lib;rpcrt4.lib;wsock32.lib;$(OpenCVDir)\x64\vc11\lib\opencv_objdetect2410d.lib;$(OpenCVDir)\x64\vc11\lib\opencv_ts2410d.lib;$(OpenCVDir)\x64\vc11\lib\opencv_video2410d.lib;$(OpenCVDir)\x64\vc11\lib\opencv_nonfree2410d.lib;$(OpenCVDir)\x64\vc11\lib\opencv_ocl2410d.lib;$(OpenCVDir)\x64\vc11\lib\opencv_photo2410d.lib;$(OpenCVDir)\x64\vc11\lib\opencv_stitching2410d.lib;$(OpenCVDir)\x64\vc11\lib\opencv_superres2410d.lib;$(OpenCVDir)\x64\vc11\lib\opencv_videostab2410d.lib;$(OpenCVDir)\x64\vc11\lib\opencv_calib3d2410d.lib;$(OpenCVDir)\x64\vc11\lib\opencv_contrib2410d.lib;$(OpenCVDir)\x64\vc11\lib\opencv_core2410d.lib;$(OpenCVDir)\x64\vc11\lib\opencv_features2d2410d.lib;$(OpenCVDir)\x64\vc11\lib\opencv_flann2410d.lib;$(OpenCVDir)\x64\vc11\lib\opencv_gpu2410d.lib;$(OpenCVDir)\x64\vc11\lib\opencv_highgui2410d.lib;$(OpenCVDir)\x64\vc11\lib\opencv_imgproc2410d.lib;$(OpenCVDir)\x64\vc11\lib\opencv_legacy2410d.lib;$(OpenCVDir)\x64\vc11\lib\opencv_ml2410d.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>.\Debug/fuse.exe</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
@@ -169,7 +169,7 @@
       <ProgramDatabaseFile>.\Debug/fuse.pdb</ProgramDatabaseFile>
       <SubSystem>Windows</SubSystem>
       <TargetMachine>MachineX86</TargetMachine>
-      <AdditionalLibraryDirectories>E:\wxWindows-2.4.2\wxWindows-2.4.2\lib;.\GL;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>E:\wxWindows-2.4.2\wxWindows-2.4.2\lib;.\GL;$(OpenCVDir)\x64\vc11\lib;$(OpenCVDir)\x64\vc11\staticlib;$(OPencvLib);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>/SAFESEH:NO %(AdditionalOptions)</AdditionalOptions>
     </Link>
     <Midl>

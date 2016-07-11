@@ -374,107 +374,114 @@ float PortraitCut::BVZ_interaction_penalty(Coord p, Coord np, ushort l, ushort n
 
   if (_cuttype == C_NORMAL || _cuttype == C_GRAD)
   {
-    // difference at p pixel
-    a=0;
-    Il = _imptr(l,p); 
-    Inl = _imptr(nl,p);  
-    for (c=0; c<3; ++c) {
-      k = Il[c] - Inl[c];
-      a += k*k;    
-    }
-    M = sqrt(a);
+		// difference at p pixel
+		a=0;
+		Il = _imptr(l,p); 
+		Inl = _imptr(nl,p);  
+		for (c=0; c<3; ++c) {
+		  k = Il[c] - Inl[c];
+		  a += k*k;    
+		}
+		M = sqrt(a);
     
-    // difference at np pixel
-    a=0;
-    Il = _imptr(l,np); 
-    Inl = _imptr(nl,np);  
+		// difference at np pixel
+		a=0;
+		Il = _imptr(l,np); 
+		Inl = _imptr(nl,np);  
 
-    for (c=0; c<3; ++c) {
-      k = Il[c] - Inl[c];
-      a += k*k;    
-    }
-    M += sqrt(a);
+		for (c=0; c<3; ++c) {
+		  k = Il[c] - Inl[c];
+		  a += k*k;    
+		}
+		M += sqrt(a);
     
     
-    M /=6.f;
+		M /=6.f;
     
-    // gradient denominator
-    if (_cuttype == C_GRAD) 
-	{
-      float G;
-      if (p.x!=np.x) {  // vertical cut, vertical Sobel filter
-	Coord minp(min(p.x,np.x), p.y);
-	if (p.y>0 && p.y<_h-1) {
-	  G = .5f*(_idata->vertGradMagLookup(l,minp) + _idata->vertGradMagLookup(nl,minp));
-	  //G = MIN(vertGradMagLookup(l,minp), vertGradMagLookup(nl,minp));
-	}
-	else
-	  G = 1.f;
-      }
-      else {  // horizontal cut, horizontal Sobel filter
-	Coord minp(p.x, min(p.y,np.y));
-	if (p.x>0 && p.x<_w-1)
-	{
-	  G = .5f*(_idata->horizGradMagLookup(l,minp) + _idata->horizGradMagLookup(nl,minp));
-	  //G = MIN(horizGradMagLookup(l,minp), horizGradMagLookup(nl,minp));
-	}
-	else
-	  G = 1.f;
-      }
+		// gradient denominator
+		if (_cuttype == C_GRAD) 
+		{
+		  float G;
+		  if (p.x!=np.x) 
+		  {  // vertical cut, vertical Sobel filter
+		Coord minp(min(p.x,np.x), p.y);
+		if (p.y>0 && p.y<_h-1) 
+		{
+		  G = .5f*(_idata->vertGradMagLookup(l,minp) + _idata->vertGradMagLookup(nl,minp));
+		  //G = MIN(vertGradMagLookup(l,minp), vertGradMagLookup(nl,minp));
+		}
+		else
+		  G = 1.f;
+		  }
+		  else 
+		  {  // horizontal cut, horizontal Sobel filter
+		Coord minp(p.x, min(p.y,np.y));
+		if (p.x>0 && p.x<_w-1)
+		{
+		  G = .5f*(_idata->horizGradMagLookup(l,minp) + _idata->horizGradMagLookup(nl,minp));
+		  //G = MIN(horizGradMagLookup(l,minp), horizGradMagLookup(nl,minp));
+		}
+		else
+		  G = 1.f;
+		  }
       
       
-		  if (G==0)
-		M = A_INFINITY;
-		  else
-		M /= G;
-    }
+			  if (G==0)
+			M = A_INFINITY;
+			  else
+			M /= G;
+		}
   }
 
-  else if (_cuttype == C_GRAD2) {
-    // difference at p pixel    
-    const CGrad& acgrad = _idata->cgradLookup(l,p);
-    const CGrad& bcgrad = _idata->cgradLookup(nl,p);
-    M = acgrad.normFrom(bcgrad);
+  else if (_cuttype == C_GRAD2) 
+  {
+		// difference at p pixel    
+		const CGrad& acgrad = _idata->cgradLookup(l,p);
+		const CGrad& bcgrad = _idata->cgradLookup(nl,p);
+		M = acgrad.normFrom(bcgrad);
 
-    // difference at np pixel
-    const CGrad& acgrad2 = _idata->cgradLookup(l,np);
-    const CGrad& bcgrad2 = _idata->cgradLookup(nl,np);
-    M += acgrad2.normFrom(bcgrad2);
+		// difference at np pixel
+		const CGrad& acgrad2 = _idata->cgradLookup(l,np);
+		const CGrad& bcgrad2 = _idata->cgradLookup(nl,np);
+		M += acgrad2.normFrom(bcgrad2);
   }
 
-  else if (_cuttype == C_BOTH) {
-    // difference at p pixel    
-    const CGrad& acgrad = _idata->cgradLookup(l,p);
-    const CGrad& bcgrad = _idata->cgradLookup(nl,p);
-    M = acgrad.normFrom(bcgrad);
+  else if (_cuttype == C_BOTH) 
+  {
+		// difference at p pixel    
+		const CGrad& acgrad = _idata->cgradLookup(l,p);
+		const CGrad& bcgrad = _idata->cgradLookup(nl,p);
+		M = acgrad.normFrom(bcgrad);
 
-    // difference at np pixel
-    const CGrad& acgrad2 = _idata->cgradLookup(l,np);
-    const CGrad& bcgrad2 = _idata->cgradLookup(nl,np);
-    M += acgrad2.normFrom(bcgrad2);
+		// difference at np pixel
+		const CGrad& acgrad2 = _idata->cgradLookup(l,np);
+		const CGrad& bcgrad2 = _idata->cgradLookup(nl,np);
+		M += acgrad2.normFrom(bcgrad2);
   
-    // difference at p pixel
-    a=0;
-    Il = _imptr(l,p); 
-    Inl = _imptr(nl,p);  
-    for (c=0; c<3; ++c) {
-      k = Il[c] - Inl[c];
-      a += k*k;    
-    }
-    M += sqrt(a);
+		// difference at p pixel
+		a=0;
+		Il = _imptr(l,p); 
+		Inl = _imptr(nl,p);  
+		for (c=0; c<3; ++c) 
+		{
+		  k = Il[c] - Inl[c];
+		  a += k*k;    
+		}
+		M += sqrt(a);
     
-    // difference at np pixel
-    a=0;
-    Il = _imptr(l,np); 
-    Inl = _imptr(nl,np);  
+		// difference at np pixel
+		a=0;
+		Il = _imptr(l,np); 
+		Inl = _imptr(nl,np);  
     
-    for (c=0; c<3; ++c) {
-      k = Il[c] - Inl[c];
-      a += k*k;    
-    }
-    M += sqrt(a);
+		for (c=0; c<3; ++c) 
+		{
+		  k = Il[c] - Inl[c];
+		  a += k*k;    
+		}
+		M += sqrt(a);
 
-    M *= .1;
+		M *= .1;
   }
 
   if (M>A_INFINITY) M = A_INFINITY;
@@ -591,118 +598,124 @@ double PortraitCut::BVZ_Expand(ushort a, double E_old) {
   for (p.y=0; p.y<_h; p.y++)
     for (p.x=0; p.x<_w; p.x++, ++ind)
       {
-	l = _labels[ind];
-	if (a == l)
-	  {
-	    IMREF(indeces_a, p) = INDEX_ACTIVE;
-	    E += BVZ_data_penalty(p, l);
-	    continue;
-	  }
-	
-	IMREF(indeces_a, p) = g -> add_node();
-	delta = BVZ_data_penalty(p, l);
-	IMREF(D_a, p) = BVZ_data_penalty(p, a) - delta;
-	E += delta;
+		l = _labels[ind];
+
+		if (a == l) // 和原始的label一样
+		  {
+			IMREF(indeces_a, p) = INDEX_ACTIVE; //返回点p在graph中的节点索引，默认为0
+			E += BVZ_data_penalty(p, l);
+			continue;
+		  }
+
+		// 	而void *则不同，任何类型的指针都可以直接赋值给它，无需进行强制类型转换：//void *p1; //int *p2; 		// 	p1 = p2	
+		
+		//label 不一样的话
+
+		IMREF(indeces_a, p) = g -> add_node();
+		delta = BVZ_data_penalty(p, l);
+		IMREF(D_a, p) = BVZ_data_penalty(p, a) - delta;
+		E += delta;
       }
   
   ind=0;
   for (p.y=0; p.y<_h; p.y++)
     for (p.x=0; p.x<_w; p.x++, ++ind)
       {
-	l = _labels[ind];
-	index = (Graph::node_id) IMREF(indeces_a, p);
+		  l = _labels[ind];
+		  index = (Graph::node_id) IMREF(indeces_a, p);
 	
-	/* adding interactions */
-	for (k=0; k<(int)NEIGHBOR_NUM; k++)
-	  {
-	    np = p + NEIGHBORS[k];
-	    if ( ! ( np>=Coord(0,0) && np<_size ) ) continue; //HUM
-	    nl = _labels[CINDEX(np)];
-	    nindex = (Graph::node_id) IMREF(indeces_a, np);
+			/* adding interactions */
+			for (k=0; k<(int)NEIGHBOR_NUM; k++)
+			  {
+				np = p + NEIGHBORS[k];
+				if ( ! ( np>=Coord(0,0) && np<_size ) ) continue; //HUM
+				nl = _labels[CINDEX(np)];
+				nindex = (Graph::node_id) IMREF(indeces_a, np);//获取在graph 中node的id
 	    
-	    if (IS_NODE_ID(index))
-	      {
-		if (IS_NODE_ID(nindex))
-		  {
-		    P_00 = BVZ_interaction_penalty(p, np, l, nl);
-		    P_0a = BVZ_interaction_penalty(p, np, l,  a);
-		    P_a0 = BVZ_interaction_penalty(p, np, a, nl);
-		    delta = (P_00 <  P_0a) ? P_00 : P_0a;
- 		    if (delta > 0)
-		      {
-			IMREF(D_a, p) -= delta; E += delta;
-			P_00 -= delta;
-			P_0a -= delta;
-		      }
-		    delta = (P_00 < P_a0) ? P_00 : P_a0;
-		    if (delta > 0)
-		      {
-			IMREF(D_a, np) -= delta; E += delta;
-			P_00 -= delta;
-			P_a0 -= delta;
-		      }
-		    if (P_00 > 0.0001) { fprintf(_fp, "ERROR: BVZ_interaction_penalty() is non-metric %f!\n",P_00); fflush(_fp); /*assert(0);*/ }
-#ifdef BVZ_ALPHA_SINK
-		    g -> add_edge(index, nindex, P_0a, P_a0);
-#else
-		    g -> add_edge(index, nindex, P_a0, P_0a);
-#endif
-		  }
-		else
-		  {
-		    delta = BVZ_interaction_penalty(p, np, l, a);
-		    IMREF(D_a, p) -= delta; E += delta;
-		  }
-	      }
-	    else
-	      {
-		if (IS_NODE_ID(nindex))
-		  {
-		    delta = BVZ_interaction_penalty(p, np, a, nl);
-		    IMREF(D_a, np) -= delta; E += delta;
-		  }
-	      }
-	  }
-      }
+				if (IS_NODE_ID(index))
+				  {
+						if (IS_NODE_ID(nindex))
+						  {
+							P_00 = BVZ_interaction_penalty(p, np, l, nl);
+							P_0a = BVZ_interaction_penalty(p, np, l,  a);
+							P_a0 = BVZ_interaction_penalty(p, np, a, nl);
+							delta = (P_00 <  P_0a) ? P_00 : P_0a;
+ 							if (delta > 0)
+							  {
+								IMREF(D_a, p) -= delta; E += delta;
+								P_00 -= delta;
+								P_0a -= delta;
+							  }
+							delta = (P_00 < P_a0) ? P_00 : P_a0;
+							if (delta > 0)
+							  {
+								  IMREF(D_a, np) -= delta; E += delta;
+								  P_00 -= delta;
+								  P_a0 -= delta;
+							  }
+							if (P_00 > 0.0001) { fprintf(_fp, "ERROR: BVZ_interaction_penalty() is non-metric %f!\n",P_00); fflush(_fp); /*assert(0);*/ }
+							#ifdef BVZ_ALPHA_SINK
+										g -> add_edge(index, nindex, P_0a, P_a0);
+							#else
+										g -> add_edge(index, nindex, P_a0, P_0a);
+							#endif
+						 }
+						else
+						  {
+							delta = BVZ_interaction_penalty(p, np, l, a);
+							IMREF(D_a, p) -= delta; E += delta;
+						  }
+				  }
+				else
+				  {
+					if (IS_NODE_ID(nindex))
+					  {
+						delta = BVZ_interaction_penalty(p, np, a, nl);
+						IMREF(D_a, np) -= delta; E += delta;
+					  }
+				  }
+			  }// end for neighbor
+     }// end for image-pixel
   
   
   /* adding source and sink edges */
   for (p.y=0; p.y<_h; p.y++)
     for (p.x=0; p.x<_w; p.x++)
       {
-	index = (Graph::node_id) IMREF(indeces_a, p);
-	if (IS_NODE_ID(index))
-	  {
-	    delta = (float) IMREF(D_a, p);
-#ifdef BVZ_ALPHA_SINK
-	    if (delta > 0) { g -> set_tweights(index, delta, 0); }
-	    else           { g -> set_tweights(index, 0, -delta); E += delta; }
-#else
-	    if (delta > 0) { g -> set_tweights(index, 0, delta); }
-	    else           { g -> set_tweights(index, -delta, 0); E += delta; }
-#endif
-	  }
+		index = (Graph::node_id) IMREF(indeces_a, p);
+		if (IS_NODE_ID(index))
+		  {
+			delta = (float) IMREF(D_a, p);
+			#ifdef BVZ_ALPHA_SINK
+						if (delta > 0) { g -> set_tweights(index, delta, 0); }
+						else           { g -> set_tweights(index, 0, -delta); E += delta; }
+			#else
+						if (delta > 0) { g -> set_tweights(index, 0, delta); }
+						else           { g -> set_tweights(index, -delta, 0); E += delta; }
+			#endif
+		  }
       }
   
   E += g -> maxflow();
 
   //fprintf(_fp, "internal E: %f\n",E); fflush(_fp);
-  if (E < E_old)
-    {
-      //fprintf(_fp,"Writing into _labels\n"); fflush(_fp);
-      ind=0;
-      for (p.y=0; p.y<_h; p.y++)
-	for (p.x=0; p.x<_w; p.x++, ++ind)
-	  {
-	    index = (Graph::node_id) IMREF(indeces_a, p);
-	    if (IS_NODE_ID(index) && g->what_segment(index)==BVZ_TERM_B)
-	      {
-		_labels[ind] = a;
-	      }
-	  }
-      delete g;
-      return E;
-    }
+    if (E < E_old)
+	{
+		//fprintf(_fp,"Writing into _labels\n"); fflush(_fp);
+		ind=0;
+		for (p.y=0; p.y<_h; p.y++)
+	      for (p.x=0; p.x<_w; p.x++, ++ind)
+		    {
+				index = (Graph::node_id) IMREF(indeces_a, p);
+				if (IS_NODE_ID(index) && g->what_segment(index)==BVZ_TERM_B)
+				{
+					_labels[ind] = a; //进行交换操作
+				}
+		   }
+
+		delete g;
+		return E;
+	}
   
   delete g;
   return E_old;
