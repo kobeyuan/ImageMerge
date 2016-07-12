@@ -720,19 +720,24 @@ void DialCut::rankImages (std::vector<RowSpan>& spans, std::priority_queue<Ranke
 // Given stroked region of width _w, height _h, returns compact rep
 void DialCut::compactStroke(const short* stroked, std::vector<RowSpan>& spans) const {
   int x,y, index, num;
-  for (y=0,index=0; y<_h; ++y) {
+  for (y=0,index=0; y<_h; ++y)
+  {
     x=0;
-    while (x<_w) {
-      if (stroked[index]==1) {
+    while (x<_w) 
+	{
+      if (stroked[index]==1) 
+	  {
 	num=0;
 	spans.push_back(RowSpan(x,y,0));
 	assert(x>=0 && y>=0 &&x<_w && y<_h);
-	do {
+	do 
+	{
 	  ++x; ++index; ++num;
 	} while (x<_w && stroked[index]==1);
 	spans[spans.size()-1]._num = num;
       }
-      else {
+      else 
+	  {
 	++x; ++index;
       }
     } // end x<w

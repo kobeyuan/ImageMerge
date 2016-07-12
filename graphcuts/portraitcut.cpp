@@ -399,37 +399,37 @@ float PortraitCut::BVZ_interaction_penalty(Coord p, Coord np, ushort l, ushort n
 		M /=6.f;
     
 		// gradient denominator
-		if (_cuttype == C_GRAD) 
-		{
-		  float G;
-		  if (p.x!=np.x) 
-		  {  // vertical cut, vertical Sobel filter
-		Coord minp(min(p.x,np.x), p.y);
-		if (p.y>0 && p.y<_h-1) 
-		{
-		  G = .5f*(_idata->vertGradMagLookup(l,minp) + _idata->vertGradMagLookup(nl,minp));
-		  //G = MIN(vertGradMagLookup(l,minp), vertGradMagLookup(nl,minp));
-		}
-		else
-		  G = 1.f;
+	if (_cuttype == C_GRAD) 
+	{
+		float G;
+		if (p.x!=np.x) 
+		{  // vertical cut, vertical Sobel filter
+		   Coord minp(min(p.x,np.x), p.y);
+				if (p.y>0 && p.y<_h-1) 
+				{
+				  G = .5f*(_idata->vertGradMagLookup(l,minp) + _idata->vertGradMagLookup(nl,minp));
+				  //G = MIN(vertGradMagLookup(l,minp), vertGradMagLookup(nl,minp));
+				}
+				else
+				  G = 1.f;
+		 }
+		 else 
+		 {  // horizontal cut, horizontal Sobel filter
+				Coord minp(p.x, min(p.y,np.y));
+				if (p.x>0 && p.x<_w-1)
+				{
+				  G = .5f*(_idata->horizGradMagLookup(l,minp) + _idata->horizGradMagLookup(nl,minp));
+				  //G = MIN(horizGradMagLookup(l,minp), horizGradMagLookup(nl,minp));
+				}
+				else
+				  G = 1.f;
 		  }
-		  else 
-		  {  // horizontal cut, horizontal Sobel filter
-		Coord minp(p.x, min(p.y,np.y));
-		if (p.x>0 && p.x<_w-1)
-		{
-		  G = .5f*(_idata->horizGradMagLookup(l,minp) + _idata->horizGradMagLookup(nl,minp));
-		  //G = MIN(horizGradMagLookup(l,minp), horizGradMagLookup(nl,minp));
-		}
-		else
-		  G = 1.f;
-		  }
-      
-      
-			  if (G==0)
+          
+		  if (G==0)
 			M = A_INFINITY;
-			  else
+		  else
 			M /= G;
+
 		}
   }
 
