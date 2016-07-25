@@ -73,50 +73,56 @@ namespace Adrien {
     Areal sumA=0, sumB=0, d;
     const int aIm = labelImToOffsetIm(labels[aI]), bIm = labelImToOffsetIm(labels[bI]);
     int ax = aI%_w, ay = aI / _w;
-    for (int c=0; c<3; ++c) {  // iterate over colors
+    for (int c=0; c<3; ++c) 
+	{  // iterate over colors
       
-      if (vertCut) { //vertical cut
-	if (ay==0 || ay==_h-1) 
-	  d = Areal(getImgValue(aI,c,aIm)) - Areal(getImgValue(bI,c,aIm));
-	else {
-	  d = Areal(getImgValue(aI-_w,c,aIm)) + 2.*Areal(getImgValue(aI,c,aIm)) + Areal(getImgValue(aI+_w,c,aIm)) -
-	    Areal(getImgValue(bI-_w,c,aIm)) - 2.*Areal(getImgValue(bI,c,aIm)) - Areal(getImgValue(bI+_w,c,aIm));
-	  d /= 3.;
-	}
+      if (vertCut) 
+	  { //vertical cut
+		if (ay==0 || ay==_h-1) 
+		  d = Areal(getImgValue(aI,c,aIm)) - Areal(getImgValue(bI,c,aIm));
+		else 
+		{
+		  d = Areal(getImgValue(aI-_w,c,aIm)) + 2.*Areal(getImgValue(aI,c,aIm)) + Areal(getImgValue(aI+_w,c,aIm)) -
+			Areal(getImgValue(bI-_w,c,aIm)) - 2.*Areal(getImgValue(bI,c,aIm)) - Areal(getImgValue(bI+_w,c,aIm));
+		  d /= 3.;
+		}
 
-	sumA += d*d;
+		sumA += d*d;
 	
-	if (ay==0 || ay==_h-1) 
-	  d = Areal(getImgValue(aI,c,bIm)) - Areal(getImgValue(bI,c,bIm));
-	else {
-	  d = Areal(getImgValue(aI-_w,c,bIm)) + 2.*Areal(getImgValue(aI,c,bIm)) + Areal(getImgValue(aI+_w,c,bIm)) -
-	    Areal(getImgValue(bI-_w,c,bIm)) - 2.*Areal(getImgValue(bI,c,bIm)) - Areal(getImgValue(bI+_w,c,bIm));
-	  d /= 3.;
-	}
+		if (ay==0 || ay==_h-1) 
+		  d = Areal(getImgValue(aI,c,bIm)) - Areal(getImgValue(bI,c,bIm));
+		else 
+		{
+		  d = Areal(getImgValue(aI-_w,c,bIm)) + 2.*Areal(getImgValue(aI,c,bIm)) + Areal(getImgValue(aI+_w,c,bIm)) -
+			Areal(getImgValue(bI-_w,c,bIm)) - 2.*Areal(getImgValue(bI,c,bIm)) - Areal(getImgValue(bI+_w,c,bIm));
+		  d /= 3.;
+		}
 
-	sumB += d*d;
+		sumB += d*d;
 
       } 
-      else { // horizontal cut
-	if (ax==0 || ax==_w-1)
-	  d = Areal(getImgValue(aI,c,aIm)) - Areal(getImgValue(bI,c,aIm));
-	else {
-	  d = Areal(getImgValue(aI-1,c,aIm)) + 2.*Areal(getImgValue(aI,c,aIm)) + Areal(getImgValue(aI+1,c,aIm)) -
-	    Areal(getImgValue(bI-1,c,aIm)) - 2.*Areal(getImgValue(bI,c,aIm)) - Areal(getImgValue(bI+1,c,aIm));
-	  d /= 3.;
-	}
+      else 
+	  { // horizontal cut
+		if (ax==0 || ax==_w-1)
+		  d = Areal(getImgValue(aI,c,aIm)) - Areal(getImgValue(bI,c,aIm));
+		else 
+		{
+		  d = Areal(getImgValue(aI-1,c,aIm)) + 2.*Areal(getImgValue(aI,c,aIm)) + Areal(getImgValue(aI+1,c,aIm)) -
+			Areal(getImgValue(bI-1,c,aIm)) - 2.*Areal(getImgValue(bI,c,aIm)) - Areal(getImgValue(bI+1,c,aIm));
+		  d /= 3.;
+		}
 
-	sumA += d*d;
+		sumA += d*d;
 
-	if (ax==0 || ax==_w-1)
-	  d = Areal(getImgValue(aI,c,bIm)) - Areal(getImgValue(bI,c,bIm));
-	else {
-	  d = Areal(getImgValue(aI-1,c,bIm)) + 2.*Areal(getImgValue(aI,c,bIm)) + Areal(getImgValue(aI+1,c,bIm)) -
-	    Areal(getImgValue(bI-1,c,bIm)) - 2.*Areal(getImgValue(bI,c,bIm)) - Areal(getImgValue(bI+1,c,bIm));
-	  d /= 3.;
-	}
+		if (ax==0 || ax==_w-1)
+		  d = Areal(getImgValue(aI,c,bIm)) - Areal(getImgValue(bI,c,bIm));
+		else {
+		  d = Areal(getImgValue(aI-1,c,bIm)) + 2.*Areal(getImgValue(aI,c,bIm)) + Areal(getImgValue(aI+1,c,bIm)) -
+			Areal(getImgValue(bI-1,c,bIm)) - 2.*Areal(getImgValue(bI,c,bIm)) - Areal(getImgValue(bI+1,c,bIm));
+		  d /= 3.;
+		}
 
-	sumB += d*d;
+		sumB += d*d;
 	
       }
       
@@ -128,39 +134,42 @@ namespace Adrien {
   }
 
 
-  void GlobalBlender::computeEdgeMap(const ushort* labels)  { 
+  void GlobalBlender::computeEdgeMap(const ushort* labels)  
+  { 
     int index=0,x,y;
     Areal E;
     for (y=0; y<_h; ++y)
-      for (x=0; x<_w; ++x, ++index) {
+      for (x=0; x<_w; ++x, ++index) 
+	  {
+		// right
+		if (x==_w-1)   // out of bounds
+		  _linkTypeLookup[index].r = L_IGNORE;
+		else if (labels[index] == labels[index+1])  // same label, no cut
+		  _linkTypeLookup[index].r = L_NORMAL;
+		else 
+		{         // vertical cut, blend or don't care?
+		  E = getE(index, index+1, labels, true);
+		  if (E < _edgeThres)  // not an edge
+			_linkTypeLookup[index].r = L_BLEND;
+		  else
+			_linkTypeLookup[index].r = L_IGNORE;
+		}
 
-	// right
-	if (x==_w-1)   // out of bounds
-	  _linkTypeLookup[index].r = L_IGNORE;
-	else if (labels[index] == labels[index+1])  // same label, no cut
-	  _linkTypeLookup[index].r = L_NORMAL;
-	else {         // vertical cut, blend or don't care?
-	  E = getE(index, index+1, labels, true);
-	  if (E < _edgeThres)  // not an edge
-	    _linkTypeLookup[index].r = L_BLEND;
-	  else
-	    _linkTypeLookup[index].r = L_IGNORE;
-	}
+			// bottom 
+			if (y==_h-1)
+			  _linkTypeLookup[index].b = L_IGNORE;
+			else if (labels[index] == labels[index+_w])
+			  _linkTypeLookup[index].b = L_NORMAL;
+			else 
+			{
+			  E = getE(index, index+_w, labels, false);
+			  if (E < _edgeThres)  // not an edge
+				_linkTypeLookup[index].b = L_BLEND;
+			  else
+				_linkTypeLookup[index].b = L_IGNORE;
+			}
 
-	// bottom 
-	if (y==_h-1)
-	  _linkTypeLookup[index].b = L_IGNORE;
-	else if (labels[index] == labels[index+_w])
-	  _linkTypeLookup[index].b = L_NORMAL;
-	else {
-	  E = getE(index, index+_w, labels, false);
-	  if (E < _edgeThres)  // not an edge
-	    _linkTypeLookup[index].b = L_BLEND;
-	  else
-	    _linkTypeLookup[index].b = L_IGNORE;
-	}
-
-      } // end iteration over pixels
+		  } // end iteration over pixels
 
   }
 
@@ -212,31 +221,35 @@ namespace Adrien {
       }
   }
 
-  void GlobalBlender::buildOffsetImage(const int i) {
+  void GlobalBlender::buildOffsetImage(const int i) {// i is the label information
     unsigned char* newIm = new unsigned char[3*numPixels()];
     _offsetImgs.push_back(newIm);
     _imgMap[i] = int(_offsetImgs.size()) - 1;
     ImageAbs* ia = _imgs[i];
     
     for (int x = 0 ; x < _w ; x++) 
-      for (int y = 0 ; y < _h ; y++) {
-	Coord prime(x,y);
-	ia->displace(prime);
-	int xPrime = prime.x, yPrime = prime.y;
-	//int xPrime = x - ia->displacement().x;
-	//int yPrime = y - ia->displacement().y;
-	if ((xPrime < 0) || (xPrime >= ia->_size.x) ||
-	    (yPrime < 0) || (yPrime >= ia->_size.y)) {
-	  newIm[imgIndexRGB(x,y,_w) + 0] = 0;
-	  newIm[imgIndexRGB(x,y,_w) + 1] = 0;
-	  newIm[imgIndexRGB(x,y,_w) + 2] = 0;
-	}
-	else {
-	  const unsigned char* I = ia->data(xPrime, yPrime);
-	  newIm[imgIndexRGB(x,y,_w) + 0] = I[0]; 
-	  newIm[imgIndexRGB(x,y,_w) + 1] = I[1];
-	  newIm[imgIndexRGB(x,y,_w) + 2] = I[2];
-	}
+      for (int y = 0 ; y < _h ; y++)
+	  {
+			Coord prime(x,y);
+			ia->displace(prime);
+			int xPrime = prime.x, yPrime = prime.y;
+			//int xPrime = x - ia->displacement().x;
+			//int yPrime = y - ia->displacement().y;
+
+			if ((xPrime < 0) || (xPrime >= ia->_size.x) ||
+				(yPrime < 0) || (yPrime >= ia->_size.y)) 
+			{
+			  newIm[imgIndexRGB(x,y,_w) + 0] = 0;
+			  newIm[imgIndexRGB(x,y,_w) + 1] = 0;
+			  newIm[imgIndexRGB(x,y,_w) + 2] = 0;
+			}
+			else
+			{
+			  const unsigned char* I = ia->data(xPrime, yPrime);
+			  newIm[imgIndexRGB(x,y,_w) + 0] = I[0]; 
+			  newIm[imgIndexRGB(x,y,_w) + 1] = I[1];
+			  newIm[imgIndexRGB(x,y,_w) + 2] = I[2];
+			}
       } // x,y
 
     /*ImageAbs* shit = new ImageAbs(_w, _h, newIm); 
@@ -287,7 +300,7 @@ namespace Adrien {
       modifyInitial(2, _xB, newLabels);
       }*/
 
-    computeRhs(0, _bR, _newLabels);
+    computeRhs(0, _bR, _newLabels);//obtain the Laplacian value as the right site of the equation.
     computeRhs(1, _bG, _newLabels);
     computeRhs(2, _bB, _newLabels);
 
@@ -301,6 +314,7 @@ namespace Adrien {
    SteppableLinearSolver precB(numVariables(), this, &sweeper, _xB, _bB, epsilon);
    //delete lockX;
 
+   //using conjugate gradients
    while (!_allDone && !_myStop) {
      // don't need to check for done since it checks internally
      //lockX = new wxMutexLocker(_xMutex);
@@ -378,21 +392,24 @@ namespace Adrien {
     //wxMutexLocker lock(_resultMutex);
     int var,i3=c;
     float val;
-    for (int i = 0 ; i < numPixels() ; ++i, i3+=3) { // iterate over pixels
-      var = pixelToVar(i);
-      if (var==-1) { // not a variable, just copy it
-	_result[i*3+c] = getImgValue(i, c, labels);
-      }
-      else {         // take from solution, but clamp it first
-	val = x[var];
-	if (val < 0)
-	  val = 0;
-	if (val > 255)
-	  val = 255;
+    for (int i = 0 ; i < numPixels() ; ++i, i3+=3)
+	{ // iterate over pixels
+		  var = pixelToVar(i);
+		  if (var==-1) 
+		  { // not a variable, just copy it
+		       _result[i*3+c] = getImgValue(i, c, labels);
+		  }
+		  else 
+		  {         // take from solution, but clamp it first
+				val = x[var];
+				if (val < 0)
+				  val = 0;
+				if (val > 255)
+				  val = 255;
 
-	_result[i3] = (unsigned char) val;
-      }
-      //fprintf(_fp, "i: %d outc: %d, result %d from _x %.5f\n", i, outc,_result[i*3+outc], _x[var]);
+				_result[i3] = (unsigned char) val;
+		  }
+		  //fprintf(_fp, "i: %d outc: %d, result %d from _x %.5f\n", i, outc,_result[i*3+outc], _x[var]);
     }
     // fflush(_fp);
   }
@@ -410,82 +427,89 @@ namespace Adrien {
     memcpy(out, _result, 3*_w*_h*sizeof(unsigned char));
   }  
 
-  void GlobalBlender::matVecMult(const Areal x[], Areal r[]) const { 
+  void GlobalBlender::matVecMult(const Areal x[], Areal r[]) const 
+  { 
+	//    0
+	// 1  i  2
+	//    3
 
     int l,i;
     int j = nonVarPixel();
     int nv = numVariables();
     memset(r, 0, nv*sizeof(Areal));
-    for (i=0; i<nv; ++i) {  // iterate over variables
+    for (i=0; i<nv; ++i) 
+	{  // iterate over variables
       
-      int pixIndex = varToPixelIndex(i);
-
-      // iterate over four neighbors
-      for (l=0; l<4; ++l) {
-	int otherPixIndex = linkResolve(pixIndex,l);
-	LinkType lt = lookupLink(pixIndex, otherPixIndex, l);
-	int otherVar = pixelToVar(otherPixIndex);
+          int pixIndex = varToPixelIndex(i);
+		  // iterate over four neighbors
+		  for (l=0; l<4; ++l) 
+		  {
+			int otherPixIndex = linkResolve(pixIndex,l);
+			LinkType lt = lookupLink(pixIndex, otherPixIndex, l);
+			int otherVar = pixelToVar(otherPixIndex);
 	
-	if (lt==L_NORMAL || lt == L_BLEND) {
-	  if (otherPixIndex == j)  // non-variable pixel, spits to rhs
-	    r[i] -= x[i];
-	  else                     // normal
-	    r[i] += x[otherVar] - x[i];
-	} 
-	// ignore L_IGNORE
-      } // iterate over 4 neighbors
+			if (lt==L_NORMAL || lt == L_BLEND) 
+			{
+			  if (otherPixIndex == j)  // non-variable pixel, spits to rhs
+				r[i] -= x[i];
+			  else                     // normal
+				r[i] += x[otherVar] - x[i];
+			} 
+			// ignore L_IGNORE
+		  } // iterate over 4 neighbors
+
     } // iterate over variables
+
   }
 
   //void GlobalBlender::computeRhs(const int c, const ushort* labels) {
   //computeRhs(c, _b, labels);
   //}
 
-  void GlobalBlender::computeRhs(const int c, Areal* b, const ushort* labels) {
+  void GlobalBlender::computeRhs(const int c, Areal* b, const ushort* labels)
+  {
     //    0
     // 1  i  2
     //    3
 
     int j = nonVarPixel();
     memset(b, 0, numVariables()*sizeof(Areal));
-    for (int i=0; i<numVariables(); ++i) {  // iterate over variables
-
+    for (int i=0; i<numVariables(); ++i)   // iterate over variables
+	{
       int pixIndex = varToPixelIndex(i);
       Areal myColor = (Areal)getImgValue(pixIndex, c, labels);
 
       // iterate over four neighbors
-      for (int l=0; l<4; ++l) {
-
-	int otherPixIndex = linkResolve(pixIndex,l);
-	LinkType lt = lookupLink(pixIndex, otherPixIndex, l);
+      for (int l=0; l<4; ++l) 
+	  {
+		int otherPixIndex = linkResolve(pixIndex,l);
+		LinkType lt = lookupLink(pixIndex, otherPixIndex, l);
 	
-	if (lt==L_NORMAL) {
-	  b[i] += Areal(getImgValue(otherPixIndex, c, labels)) - myColor;
-	}
-
-	else if (lt==L_BLEND) {
-	  int myIm = labelImToOffsetIm(labels[pixIndex]),
-	    otherIm = labelImToOffsetIm(labels[otherPixIndex]);
-	  Areal a1 = Areal(getImgValue(otherPixIndex,c,myIm)) - myColor;
-	  Areal a2 = Areal(getImgValue(otherPixIndex,c,otherIm)) - Areal(getImgValue(pixIndex,c,otherIm));
-	  b[i] += (a1+a2) * .5;
-	  //b[i] += ( ( Areal(getImgValue(otherPixIndex,c,myIm)) - myColor) +
-	  //     ( Areal(getImgValue(otherPixIndex,c,otherIm)) - Areal(getImgValue(pixIndex,c,otherIm)))
-	  //     * .5);	  
-	}
-	// ignore L_IGNORE case
+		if (lt==L_NORMAL)
+		{
+		  b[i] += Areal(getImgValue(otherPixIndex, c, labels)) - myColor;
+		}
+		else if (lt==L_BLEND) 
+		{
+		  int myIm = labelImToOffsetIm(labels[pixIndex]),
+			otherIm = labelImToOffsetIm(labels[otherPixIndex]);
+		  Areal a1 = Areal(getImgValue(otherPixIndex,c,myIm)) - myColor;
+		  Areal a2 = Areal(getImgValue(otherPixIndex,c,otherIm)) - Areal(getImgValue(pixIndex,c,otherIm));
+		  b[i] += (a1+a2) * .5;
+		  //b[i] += ( ( Areal(getImgValue(otherPixIndex,c,myIm)) - myColor) +
+		  //     ( Areal(getImgValue(otherPixIndex,c,otherIm)) - Areal(getImgValue(pixIndex,c,otherIm)))
+		  //     * .5);	  
+		}		// ignore L_IGNORE case
 	
-	// deal with non-var pixel
-	if (otherPixIndex == j)
-	  b[i] -= (Areal) getImgValue(j,c,labels);
+		// deal with non-var pixel
+		if (otherPixIndex == j)
+		  b[i] -= (Areal) getImgValue(j,c,labels);
 
       } // iterate over neighbors
       
     }// iterate over variables
+
   }
 
-
-
-  
-  
+   
 } // end namespace

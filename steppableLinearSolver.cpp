@@ -14,7 +14,7 @@ SteppableLinearSolver::SteppableLinearSolver(int n_, implicitMatrix *A_, const H
   printf("starting conjugate gradient with %d variables\n",n);
   
   vecAssign(n, r, b);
-  A->matVecMult(x, temp);
+  A->matVecMult(x, temp); //A*x = temp
   vecDiffEqual(n, r, temp);
   
   rSqrLen = vecSqrLen(n, r);

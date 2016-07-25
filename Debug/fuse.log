@@ -1,11 +1,8 @@
-﻿  dialCut.cpp
+﻿  blend.cpp
 g:\projects\stop motion\schedule\15-wek-boundary-process\photomontage\fuse_1b\tmpfuse\jl_vectors.h(180): warning C4244: “return”: 从“int”转换到“float”，可能丢失数据
 g:\projects\stop motion\schedule\15-wek-boundary-process\photomontage\fuse_1b\tmpfuse\jl_vectors.h(184): warning C4244: “return”: 从“const int”转换到“float”，可能丢失数据
 g:\projects\stop motion\schedule\15-wek-boundary-process\photomontage\fuse_1b\tmpfuse\jl_vectors.h(389): warning C4244: “return”: 从“const int”转换到“float”，可能丢失数据
-  portraitcut.cpp
-g:\projects\stop motion\schedule\15-wek-boundary-process\photomontage\fuse_1b\tmpfuse\jl_vectors.h(180): warning C4244: “return”: 从“int”转换到“float”，可能丢失数据
-g:\projects\stop motion\schedule\15-wek-boundary-process\photomontage\fuse_1b\tmpfuse\jl_vectors.h(184): warning C4244: “return”: 从“const int”转换到“float”，可能丢失数据
-g:\projects\stop motion\schedule\15-wek-boundary-process\photomontage\fuse_1b\tmpfuse\jl_vectors.h(389): warning C4244: “return”: 从“const int”转换到“float”，可能丢失数据
-graphcuts\portraitcut.cpp(484): warning C4305: “*=”: 从“double”到“float”截断
+blending\blend.cpp(307): warning C4305: “初始化”: 从“double”到“float”截断
+  steppableLinearSolver.cpp
   正在生成代码...
   fuse.vcxproj -> G:\Projects\STOP MOTION\Schedule\15-wek-boundary-process\photomontage\fuse_1b\tmpfuse\.\Debug\fuse.exe
