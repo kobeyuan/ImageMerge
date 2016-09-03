@@ -147,7 +147,7 @@
     <ClCompile>
       <AdditionalOptions>/I$(wxwin)\lib\mswd  %(AdditionalOptions)</AdditionalOptions>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>$(wxwin)\include;$(wxwin)\contrib\include;.\GL;E:\wxWindows-2.4.2\wxWindows-2.4.2\src\msw;$(OpenCVDir)\include\opencv2;$(OpenCVDir)\include\opencv;$(OpenCVDir)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(wxwin)\include;$(wxwin)\contrib\include;.\GL;G:\wxWindows-2.4.2\wxWindows-2.4.2\src\msw;$(OpenCVDir)\include\opencv2;$(OpenCVDir)\include\opencv;$(OpenCVDir)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;_WINDOWS;WINVER=0x400;_MT;wxUSE_GUI=1;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <PrecompiledHeader />
